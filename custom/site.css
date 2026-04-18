@@ -1,4 +1,8 @@
-html, body, * {
+.rest-hero,
+.ru-proof-section,
+.ru-platform-section,
+.ru-human-section,
+.ru-invite-section,
+.ru-footer-section {
   background: purple !important;
-  color: white !important;
 }
