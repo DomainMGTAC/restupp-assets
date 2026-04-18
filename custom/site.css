@@ -2242,3 +2242,153 @@ body{
     max-width: none;
   }
 }
+
+/* =========================
+   GLOBAL RESPONSIVE ALIGNMENT FIXES
+========================= */
+
+html, body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section, div, header {
+  box-sizing: border-box;
+}
+
+.rest-hero-content,
+.ru-platform-header,
+.ru-proof-header,
+.ru-human-copy,
+.ru-invite-copy,
+.ru-footer-brand {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ru-proof-header,
+.ru-platform-header {
+  text-align: center;
+}
+
+.ru-proof-copy,
+.ru-platform-copy,
+.ru-human-body,
+.ru-invite-body,
+.ru-invite-note {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 991px) {
+  .rest-hero-wrap,
+  .ru-proof-wrap,
+  .ru-platform-wrap,
+  .ru-human-wrap,
+  .ru-invite-wrap,
+  .ru-footer-wrap {
+    width: min(92vw, 100%);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .rest-hero-content {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .rest-hero-title,
+  .rest-hero-sub,
+  .rest-hero-support {
+    max-width: 100%;
+  }
+
+  .rest-hero-actions {
+    justify-content: flex-start;
+  }
+
+  .ru-human-grid,
+  .ru-invite-inner,
+  .hiw-stack-layout,
+  .ru-platform-grid,
+  .ru-proof-grid {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .rest-hero-wrap,
+  .ru-proof-wrap,
+  .ru-platform-wrap,
+  .ru-human-wrap,
+  .ru-invite-wrap,
+  .ru-footer-wrap {
+    width: min(94vw, 100%);
+  }
+
+  .rest-hero-content,
+  .ru-platform-header,
+  .ru-proof-header,
+  .ru-human-copy,
+  .ru-invite-copy,
+  .ru-footer-brand {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .rest-hero-title,
+  .rest-hero-sub,
+  .rest-hero-support,
+  .ru-platform-title,
+  .ru-proof-title,
+  .ru-human-title,
+  .ru-invite-title {
+    text-wrap: balance;
+  }
+
+  .rest-hero-actions,
+  .ru-invite-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .rest-btn-group {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .rest-btn,
+  .ru-invite-btn {
+    width: auto;
+    max-width: 100%;
+  }
+
+  .ru-human-point,
+  .ru-platform-card,
+  .ru-proof-card,
+  .ru-invite-card {
+    width: 100%;
+  }
+
+  .ru-footer-top,
+  .ru-footer-bottom {
+    width: 100%;
+  }
+
+  .ru-footer-subscribe {
+    width: 100%;
+  }
+
+  .ru-footer-subscribe-shell {
+    width: 100%;
+  }
+}
